@@ -276,7 +276,7 @@ Public Class CapaDA
     End Function
 
     Public Function SeleccionarSolicitudesxCliente(Idcliente As Integer) As DataTable
-        Dim consulta As String = "Select * from Solicitudes where IdCliente = '" & Idcliente & "'"
+        Dim consulta As String = "select s.Idsolicitud, c.Nombre, c.Apellido, v.Marca, v.Modelo, s.Estado from Solicitudes s, Clientes c, Vehiculos v where  s.IdCliente = '" & Idcliente & "'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
