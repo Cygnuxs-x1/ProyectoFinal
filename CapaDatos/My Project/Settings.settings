@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Cadena" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=(localdb)\MSSQLLocalDB;Database=Consecionario;Trusted_Connection=True;
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Consecionario;Integrated Security=SSPI;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
