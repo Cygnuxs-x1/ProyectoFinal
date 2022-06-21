@@ -11,7 +11,8 @@ Public Class FormLogin
             Else
 
                 If persona.LoginCliente(TBDocumento.Text, TBContreaseña.Text).Rows.Count <> 0 Then
-                    Catalogo.Show()
+                    FormCliente.LIDCliente.Text = persona.LoginCliente(TBDocumento.Text, TBContreaseña.Text).Rows(0)(0)
+                    FormCliente.Show()
                 End If
             End If
         End If

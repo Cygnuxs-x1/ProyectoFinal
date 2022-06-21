@@ -2,8 +2,7 @@
 Public Class CapaDA
     Public ReadOnly Property RetornarCadena() As String
         Get
-            Return My.Settings.Cadena
-            '"Server=(localdb)\MSSQLLocalDB;Database=Concesionario;Trusted_Connection=True; "
+            Return "Server=DESKTOP-JM7Q6DD;Database=Concesionario;Trusted_Connection=True;"
         End Get
     End Property
 
@@ -210,7 +209,7 @@ Public Class CapaDA
     End Function
 
     Public Function BusquedaVehiculoxModelo(Modelo As String) As DataTable
-        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año, Disponible from Vehiculos where Modelo = '" & Modelo & "'"
+        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año, Disponible from Vehiculos where Modelo like '" & Modelo & "%'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
@@ -276,6 +275,14 @@ Public Class CapaDA
 
     Public Function SeleccionarSolicitud() As DataTable
         Dim consulta As String = "Select * from Solicitudes "
+        Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
+        Dim tabla As New DataTable
+        adaptador.Fill(tabla)
+        Return tabla
+    End Function
+
+    Public Function SeleccionarSolicitudesxCliente(Idcliente As Integer) As DataTable
+        Dim consulta As String = "Select * from Solicitudes where IdCliente = '" & Idcliente & "'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
