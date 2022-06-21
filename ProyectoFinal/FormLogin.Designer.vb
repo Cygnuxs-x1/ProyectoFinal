@@ -24,12 +24,11 @@ Partial Class FormLogin
     Private Sub InitializeComponent()
         Me.BEntrar = New System.Windows.Forms.Button()
         Me.TBContreaseña = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBDocumento = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnSalir = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,18 +54,6 @@ Partial Class FormLogin
         Me.TBContreaseña.Size = New System.Drawing.Size(284, 23)
         Me.TBContreaseña.TabIndex = 8
         Me.TBContreaseña.UseSystemPasswordChar = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(420, 109)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 17)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Documento"
         '
         'Label2
         '
@@ -97,15 +84,6 @@ Partial Class FormLogin
         Me.Panel1.Size = New System.Drawing.Size(325, 341)
         Me.Panel1.TabIndex = 8
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(78, 91)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(243, 235)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
@@ -119,6 +97,15 @@ Partial Class FormLogin
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(78, 91)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(243, 235)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -128,7 +115,6 @@ Partial Class FormLogin
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TBDocumento)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TBContreaseña)
         Me.Controls.Add(Me.BEntrar)
         Me.Controls.Add(Me.Panel1)
@@ -143,7 +129,6 @@ Partial Class FormLogin
 
     Friend WithEvents BEntrar As Button
     Friend WithEvents TBContreaseña As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TBDocumento As TextBox
     Friend WithEvents Panel1 As Panel
