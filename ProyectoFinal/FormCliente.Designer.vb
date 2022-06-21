@@ -22,17 +22,18 @@ Partial Class FormCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LIDCliente = New System.Windows.Forms.Label()
+        Me.BVerSolicitudes = New System.Windows.Forms.Button()
         Me.BVerCatologo = New System.Windows.Forms.Button()
         Me.PSolicitudes = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.LSolicitudes = New System.Windows.Forms.Label()
         Me.DGVSolicitudes = New System.Windows.Forms.DataGridView()
-        Me.LIDCliente = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LSolicitudes = New System.Windows.Forms.Label()
+        Me.BCerrarSesion = New System.Windows.Forms.Button()
         Me.PanelMenu.SuspendLayout()
         Me.PSolicitudes.SuspendLayout()
         CType(Me.DGVSolicitudes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,15 +42,50 @@ Partial Class FormCliente
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.BCerrarSesion)
         Me.PanelMenu.Controls.Add(Me.Label1)
         Me.PanelMenu.Controls.Add(Me.LIDCliente)
-        Me.PanelMenu.Controls.Add(Me.Button1)
+        Me.PanelMenu.Controls.Add(Me.BVerSolicitudes)
         Me.PanelMenu.Controls.Add(Me.BVerCatologo)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(200, 559)
         Me.PanelMenu.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.Location = New System.Drawing.Point(27, 412)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(110, 18)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Su IdCliente es:"
+        '
+        'LIDCliente
+        '
+        Me.LIDCliente.AutoSize = True
+        Me.LIDCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LIDCliente.ForeColor = System.Drawing.SystemColors.Control
+        Me.LIDCliente.Location = New System.Drawing.Point(143, 412)
+        Me.LIDCliente.Name = "LIDCliente"
+        Me.LIDCliente.Size = New System.Drawing.Size(22, 18)
+        Me.LIDCliente.TabIndex = 2
+        Me.LIDCliente.Text = "ID"
+        '
+        'BVerSolicitudes
+        '
+        Me.BVerSolicitudes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BVerSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BVerSolicitudes.ForeColor = System.Drawing.SystemColors.Control
+        Me.BVerSolicitudes.Location = New System.Drawing.Point(30, 192)
+        Me.BVerSolicitudes.Name = "BVerSolicitudes"
+        Me.BVerSolicitudes.Size = New System.Drawing.Size(148, 33)
+        Me.BVerSolicitudes.TabIndex = 1
+        Me.BVerSolicitudes.Text = "Ver Solicitudes"
+        Me.BVerSolicitudes.UseVisualStyleBackColor = True
         '
         'BVerCatologo
         '
@@ -73,17 +109,38 @@ Partial Class FormCliente
         Me.PSolicitudes.Size = New System.Drawing.Size(984, 559)
         Me.PSolicitudes.TabIndex = 1
         '
-        'Button1
+        'DGVSolicitudes
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(30, 192)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 33)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Ver Solicitudes"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVSolicitudes.EnableHeadersVisualStyles = False
+        Me.DGVSolicitudes.GridColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.DGVSolicitudes.Location = New System.Drawing.Point(50, 105)
+        Me.DGVSolicitudes.Name = "DGVSolicitudes"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGVSolicitudes.RowHeadersWidth = 45
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
+        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DGVSolicitudes.Size = New System.Drawing.Size(868, 168)
+        Me.DGVSolicitudes.TabIndex = 1
         '
         'LSolicitudes
         '
@@ -96,60 +153,17 @@ Partial Class FormCliente
         Me.LSolicitudes.TabIndex = 0
         Me.LSolicitudes.Text = "Estado de sus solicitudes:"
         '
-        'DGVSolicitudes
+        'BCerrarSesion
         '
-        Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
-        Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVSolicitudes.EnableHeadersVisualStyles = False
-        Me.DGVSolicitudes.GridColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.DGVSolicitudes.Location = New System.Drawing.Point(50, 105)
-        Me.DGVSolicitudes.Name = "DGVSolicitudes"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Menu
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
-        Me.DGVSolicitudes.RowHeadersWidth = 45
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.Window
-        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle12
-        Me.DGVSolicitudes.Size = New System.Drawing.Size(868, 168)
-        Me.DGVSolicitudes.TabIndex = 1
-        '
-        'LIDCliente
-        '
-        Me.LIDCliente.AutoSize = True
-        Me.LIDCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LIDCliente.ForeColor = System.Drawing.SystemColors.Control
-        Me.LIDCliente.Location = New System.Drawing.Point(143, 501)
-        Me.LIDCliente.Name = "LIDCliente"
-        Me.LIDCliente.Size = New System.Drawing.Size(22, 18)
-        Me.LIDCliente.TabIndex = 2
-        Me.LIDCliente.Text = "ID"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(27, 501)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 18)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Su IdCliente es:"
+        Me.BCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BCerrarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BCerrarSesion.ForeColor = System.Drawing.SystemColors.Control
+        Me.BCerrarSesion.Location = New System.Drawing.Point(30, 460)
+        Me.BCerrarSesion.Name = "BCerrarSesion"
+        Me.BCerrarSesion.Size = New System.Drawing.Size(148, 33)
+        Me.BCerrarSesion.TabIndex = 4
+        Me.BCerrarSesion.Text = "Cerrar sesion"
+        Me.BCerrarSesion.UseVisualStyleBackColor = True
         '
         'FormCliente
         '
@@ -173,9 +187,10 @@ Partial Class FormCliente
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents BVerCatologo As Button
     Friend WithEvents PSolicitudes As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BVerSolicitudes As Button
     Friend WithEvents LSolicitudes As Label
     Friend WithEvents DGVSolicitudes As DataGridView
     Friend WithEvents LIDCliente As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents BCerrarSesion As Button
 End Class

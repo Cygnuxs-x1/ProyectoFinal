@@ -216,13 +216,7 @@ Public Class CapaDA
         Return tabla
     End Function
 
-    Public Function MasVendidos() As DataTable
-        Dim consulta As String = "Select IdEmpleado, Foto FROM Empleados "
-        Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
-        Dim tabla As New DataTable
-        adaptador.Fill(tabla)
-        Return tabla
-    End Function
+
 
     'GESTION SOLICITUDES
 

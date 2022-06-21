@@ -6,7 +6,6 @@ Public Class Catalogo
 
     Private Sub Catalogo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GBVerTodos.Hide()
-        GBMasVenidos.Show()
         DGVVehiculos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         GBCatalogo.Hide()
     End Sub
@@ -72,15 +71,6 @@ Public Class Catalogo
         GBVerTodos.Show()
     End Sub
 
-    Private Sub BMasVendido_Click(sender As Object, e As EventArgs) Handles BMasVendido.Click
-        Dim var1 As Byte() = vehiculo.Masvendido().Rows(0)(1)
-        Dim ms1 As New MemoryStream(var1)
-        PBMasVendido1.Image = Image.FromStream(ms1)
-
-        Dim var2 As Byte() = vehiculo.Masvendido().Rows(1)(1)
-        Dim ms2 As New MemoryStream(var2)
-        PBMasVendido2.Image = Image.FromStream(ms2)
-    End Sub
 
     Private Sub BSolicitarCompra_Click(sender As Object, e As EventArgs) Handles BSolicitarCompra.Click
 
@@ -104,6 +94,10 @@ Public Class Catalogo
         Dim var As Byte() = vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(9)
         Dim ms As New MemoryStream(var)
         PbFotoVehiculo.Image = Image.FromStream(ms)
+
+    End Sub
+
+    Private Sub BMasVendido_Click(sender As Object, e As EventArgs) Handles BMasVendido.Click
 
     End Sub
 End Class

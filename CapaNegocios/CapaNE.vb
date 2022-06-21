@@ -82,10 +82,6 @@ Public Class CapaNE
         Return registro.BusquedaVehiculoxModelo(Modelo)
     End Function
 
-    Public Function Masvendido() As DataTable
-        Return registro.MasVendidos
-    End Function
-
     Public Sub AltaSolicitud(Idcliente As Integer, Idvehiculo As Integer, Estado As String)
         registro.AltaSolicitud(Idcliente, Idvehiculo, Estado)
     End Sub
