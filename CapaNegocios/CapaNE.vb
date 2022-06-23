@@ -98,6 +98,10 @@ Public Class CapaNE
         registro.ModificarEstadoSolicitud(IdSolicitud, Estado)
     End Sub
 
+    Public Function SeleccionarSolicitud() As DataTable
+        Return registro.SeleccionarSolicitud()
+    End Function
+
     Public Function SeleccionarSolicitudesxCliente(Idcliente As Integer) As DataTable
         Return registro.SeleccionarSolicitudesxCliente(Idcliente)
     End Function

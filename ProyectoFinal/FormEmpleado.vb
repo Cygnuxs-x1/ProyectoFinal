@@ -10,10 +10,10 @@ Public Class FormEmpleado
         LDocumento.Text = "Dni: " + FormLogin.TBDocumento.Text
         LNombreApellido.Text = "Bienvenido: " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(1) + " " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(2)
         LFechaNacimiento.Text = "Fecha de Nacimiento: " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(4)
-        LDireccion.Text = "Direccion: " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(5)
         Dim var As Byte() = persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(7)
         Dim ms As New MemoryStream(var)
         PBFoto.Image = Image.FromStream(ms)
+        DGVSolicitudes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
     End Sub
 
     Private Sub btnIrCatalogo_Click(sender As Object, e As EventArgs) Handles btnIrCatalogo.Click
@@ -29,5 +29,11 @@ Public Class FormEmpleado
         FormLogin.Show()
         Me.Hide()
 
+    End Sub
+
+    Private Sub BSolicitudes_Click(sender As Object, e As EventArgs) Handles BSolicitudes.Click
+        PSolicitudes.Show()
+        LSolicitudes.Text = "Solicitudes"
+        DGVSolicitudes.DataSource = persona.SeleccionarSolicitud
     End Sub
 End Class

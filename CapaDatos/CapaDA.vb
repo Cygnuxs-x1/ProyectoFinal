@@ -268,7 +268,7 @@ Public Class CapaDA
     End Sub
 
     Public Function SeleccionarSolicitud() As DataTable
-        Dim consulta As String = "Select * from Solicitudes "
+        Dim consulta As String = "Select * from VistaSolicitudesClientes"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
