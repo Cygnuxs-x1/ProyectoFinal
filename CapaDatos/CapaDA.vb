@@ -193,7 +193,7 @@ Public Class CapaDA
     End Function
 
     Public Function BusquedaxMarcaVehiculo(Marca As String) As DataTable
-        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año, Disponible from Vehiculos where Marca = '" & Marca & "'"
+        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año from Vehiculos where Marca = '" & Marca & "'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
@@ -201,7 +201,7 @@ Public Class CapaDA
     End Function
 
     Public Function BusquedaVehiculoPrecio(PrecioMinimo As Integer, PrecioMaximo As Integer) As DataTable
-        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año, Disponible from Vehiculos where Precio > '" & PrecioMinimo & "' and Precio < '" & PrecioMaximo & "'"
+        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año from Vehiculos where Precio > '" & PrecioMinimo & "' and Precio < '" & PrecioMaximo & "'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
@@ -209,7 +209,7 @@ Public Class CapaDA
     End Function
 
     Public Function BusquedaVehiculoxModelo(Modelo As String) As DataTable
-        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año, Disponible from Vehiculos where Modelo like '" & Modelo & "%'"
+        Dim consulta As String = "Select IdVehiculo, Marca, Modelo, Año from Vehiculos where Modelo like '" & Modelo & "%'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
@@ -276,10 +276,11 @@ Public Class CapaDA
     End Function
 
     Public Function SeleccionarSolicitudesxCliente(Idcliente As Integer) As DataTable
-        Dim consulta As String = "select s.Idsolicitud, c.Nombre, c.Apellido, v.Marca, v.Modelo, s.Estado from Solicitudes s, Clientes c, Vehiculos v where  s.IdCliente = '" & Idcliente & "'"
+        Dim consulta As String = "select Nombre, Apellido, Marca, Modelo, Estado from VistaSolicitudesClientes where IdCliente = '" & Idcliente & "'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
         Return tabla
     End Function
+
 End Class

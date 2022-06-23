@@ -101,4 +101,6 @@ Public Class CapaNE
     Public Function SeleccionarSolicitudesxCliente(Idcliente As Integer) As DataTable
         Return registro.SeleccionarSolicitudesxCliente(Idcliente)
     End Function
+
+
 End Class

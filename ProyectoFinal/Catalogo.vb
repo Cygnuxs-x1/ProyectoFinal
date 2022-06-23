@@ -5,13 +5,13 @@ Public Class Catalogo
     Dim vehiculo As New CapaNE
 
     Private Sub Catalogo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GBVerTodos.Hide()
+        PVerCatalogo.Hide()
         DGVVehiculos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        GBCatalogo.Hide()
+        TextBox1_TextChanged()
     End Sub
 
     Private Sub BTVerMas_Click(sender As Object, e As EventArgs) Handles BTVerMas.Click
-        GBCatalogo.Show()
+        PVerCatalogo.Show()
         LMarcaModelo.Text = vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(1) + " " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(2)
         LAño.Text = "Año: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(3).ToString
         LMotor.Text = "Motor: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(4).ToString + " L"
@@ -59,41 +59,28 @@ Public Class Catalogo
         DGVVehiculos.DataSource = vehiculo.BusquedaVehiculoPrecio(preciominimo, preciomaximo)
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TBBusqueda.TextChanged
+    Private Sub TextBox1_TextChanged() Handles TBBusqueda.TextChanged
         DGVVehiculos.DataSource = vehiculo.BusquedaVehiculoxModelo(TBBusqueda.Text)
     End Sub
 
-    Private Sub BCerrarSesion_Click(sender As Object, e As EventArgs) Handles BCerrarSesion.Click
+    Private Sub BCerrarSesion_Click(sender As Object, e As EventArgs) Handles BVolver.Click
+        FormCliente.Show()
         Me.Hide()
     End Sub
 
     Private Sub BVerTodos_Click(sender As Object, e As EventArgs) Handles BVerTodos.Click
-        GBVerTodos.Show()
+        PanelVerTodo.Show()
+        TextBox1_TextChanged()
     End Sub
 
 
     Private Sub BSolicitarCompra_Click(sender As Object, e As EventArgs) Handles BSolicitarCompra.Click
-
-        FormVenta.Show()
-        Me.Hide()
-
-        GBCatalogo.Show()
-        LMarcaModelo.Text = vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(1) + " " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(2)
-        LAño.Text = "Año: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(3).ToString
-        LMotor.Text = "Motor: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(4).ToString + " L"
-        LPrecio.Text = "Precio: $" + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(5).ToString
-        LAsientos.Text = "Cant. Asientos: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(6).ToString
-        LVelocidad.Text = "Cant. Velocidades: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(7).ToString
-        LPeso.Text = "Peso: " + vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(8).ToString
         If vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(10).ToString() = True Then
-            LStock.Text = "El vehiculo está DISPONIBLE"
-
+            vehiculo.AltaSolicitud(FormCliente.LIDCliente.Text, DGVVehiculos.CurrentRow.Cells(0).Value, "Pendiente")
+            MessageBox.Show("Se a solicitado la compra")
         Else
-            LStock.Text = "El vehiculo NO está DISPONIBLE"
+            MessageBox.Show("No puede solicitar compra porque el vehiculo no esta disponible")
         End If
-        Dim var As Byte() = vehiculo.BusquedaVehiculo(DGVVehiculos.CurrentRow.Cells(0).Value).Rows(0)(9)
-        Dim ms As New MemoryStream(var)
-        PbFotoVehiculo.Image = Image.FromStream(ms)
 
     End Sub
 
