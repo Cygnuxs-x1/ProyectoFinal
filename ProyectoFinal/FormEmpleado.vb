@@ -33,7 +33,15 @@ Public Class FormEmpleado
 
     Private Sub BSolicitudes_Click(sender As Object, e As EventArgs) Handles BSolicitudes.Click
         PSolicitudes.Show()
-        LSolicitudes.Text = "Solicitudes"
+        LSolicitudes.Text = "Total de Solicitudes: " + persona.SeleccionarSolicitud.Rows.Count.ToString
+        DGVSolicitudes.DataSource = persona.SeleccionarSolicitud
+    End Sub
+
+    Private Sub BAprobarVenta_Click(sender As Object, e As EventArgs) Handles BAprobarVenta.Click
+        persona.ModificarEstadoSolicitud(DGVSolicitudes.CurrentRow.Cells(0).Value, CBEstadoSolicitud.Text)
+        If CBEstadoSolicitud.Text = "Aprobada" Then
+            FormVenta.Show()
+        End If
         DGVSolicitudes.DataSource = persona.SeleccionarSolicitud
     End Sub
 End Class

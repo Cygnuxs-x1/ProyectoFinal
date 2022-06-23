@@ -260,7 +260,7 @@ Public Class CapaDA
         Dim conexion As New SqlConnection(RetornarCadena)
         Dim comando As New SqlCommand
         comando.Connection = conexion
-        comando.CommandText = "Update Solicitud set Estado = '" & Estado & "' where Id = '" & IdSolicitud & "'"
+        comando.CommandText = "Update Solicitudes set Estado = '" & Estado & "' where IdSolicitud = '" & IdSolicitud & "'"
 
         conexion.Open()
         comando.ExecuteNonQuery()
