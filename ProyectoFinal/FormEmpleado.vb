@@ -14,13 +14,10 @@ Public Class FormEmpleado
         Dim ms As New MemoryStream(var)
         PBFoto.Image = Image.FromStream(ms)
         DGVSolicitudes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        BSolicitudes_Click()
     End Sub
 
     Private Sub btnIrCatalogo_Click(sender As Object, e As EventArgs) Handles btnIrCatalogo.Click
-
-        Catalogo.Show()
-        Me.Hide()
-
 
     End Sub
 
@@ -31,7 +28,7 @@ Public Class FormEmpleado
 
     End Sub
 
-    Private Sub BSolicitudes_Click(sender As Object, e As EventArgs) Handles BSolicitudes.Click
+    Private Sub BSolicitudes_Click() Handles BSolicitudes.Click
         PSolicitudes.Show()
         LSolicitudes.Text = "Total de Solicitudes: " + persona.SeleccionarSolicitud.Rows.Count.ToString
         DGVSolicitudes.DataSource = persona.SeleccionarSolicitud
