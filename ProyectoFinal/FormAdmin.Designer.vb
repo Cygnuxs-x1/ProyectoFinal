@@ -113,6 +113,7 @@ Partial Class FormAdmin
         Me.BTGestionClientes = New System.Windows.Forms.Button()
         Me.BTGestionVehiculos = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnIrCatalogo = New System.Windows.Forms.Button()
         Me.BTGestionSolicitudes = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BCerrarSesion = New System.Windows.Forms.Button()
@@ -128,7 +129,6 @@ Partial Class FormAdmin
         Me.BMostrarTodoSolicitud = New System.Windows.Forms.Button()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.DGVClienteSolicitud = New System.Windows.Forms.DataGridView()
-        Me.btnIrCatalogo = New System.Windows.Forms.Button()
         Me.GBEmpleados.SuspendLayout()
         CType(Me.PBFotoEmpleado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGVEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -261,7 +261,7 @@ Partial Class FormAdmin
         Me.Label7.ForeColor = System.Drawing.SystemColors.Window
         Me.Label7.Location = New System.Drawing.Point(693, 399)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(36, 17)
+        Me.Label7.Size = New System.Drawing.Size(39, 18)
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Foto"
         '
@@ -281,7 +281,7 @@ Partial Class FormAdmin
         Me.DTPNacimientoEmpleado.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DTPNacimientoEmpleado.Location = New System.Drawing.Point(458, 228)
         Me.DTPNacimientoEmpleado.Name = "DTPNacimientoEmpleado"
-        Me.DTPNacimientoEmpleado.Size = New System.Drawing.Size(200, 23)
+        Me.DTPNacimientoEmpleado.Size = New System.Drawing.Size(200, 24)
         Me.DTPNacimientoEmpleado.TabIndex = 12
         '
         'TBDireccionEmpleado
@@ -289,7 +289,7 @@ Partial Class FormAdmin
         Me.TBDireccionEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDireccionEmpleado.Location = New System.Drawing.Point(458, 294)
         Me.TBDireccionEmpleado.Name = "TBDireccionEmpleado"
-        Me.TBDireccionEmpleado.Size = New System.Drawing.Size(200, 23)
+        Me.TBDireccionEmpleado.Size = New System.Drawing.Size(200, 24)
         Me.TBDireccionEmpleado.TabIndex = 10
         '
         'TBDocumentoEmpleado
@@ -297,7 +297,7 @@ Partial Class FormAdmin
         Me.TBDocumentoEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDocumentoEmpleado.Location = New System.Drawing.Point(142, 360)
         Me.TBDocumentoEmpleado.Name = "TBDocumentoEmpleado"
-        Me.TBDocumentoEmpleado.Size = New System.Drawing.Size(195, 23)
+        Me.TBDocumentoEmpleado.Size = New System.Drawing.Size(195, 24)
         Me.TBDocumentoEmpleado.TabIndex = 9
         '
         'TBApellidoEmpleado
@@ -305,7 +305,7 @@ Partial Class FormAdmin
         Me.TBApellidoEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBApellidoEmpleado.Location = New System.Drawing.Point(142, 296)
         Me.TBApellidoEmpleado.Name = "TBApellidoEmpleado"
-        Me.TBApellidoEmpleado.Size = New System.Drawing.Size(195, 23)
+        Me.TBApellidoEmpleado.Size = New System.Drawing.Size(195, 24)
         Me.TBApellidoEmpleado.TabIndex = 8
         '
         'TBNombreEmpleado
@@ -313,7 +313,7 @@ Partial Class FormAdmin
         Me.TBNombreEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBNombreEmpleado.Location = New System.Drawing.Point(142, 231)
         Me.TBNombreEmpleado.Name = "TBNombreEmpleado"
-        Me.TBNombreEmpleado.Size = New System.Drawing.Size(195, 23)
+        Me.TBNombreEmpleado.Size = New System.Drawing.Size(195, 24)
         Me.TBNombreEmpleado.TabIndex = 7
         '
         'Label5
@@ -323,7 +323,7 @@ Partial Class FormAdmin
         Me.Label5.ForeColor = System.Drawing.SystemColors.Window
         Me.Label5.Location = New System.Drawing.Point(369, 296)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(67, 17)
+        Me.Label5.Size = New System.Drawing.Size(71, 18)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Dirección"
         '
@@ -334,7 +334,7 @@ Partial Class FormAdmin
         Me.Label4.ForeColor = System.Drawing.SystemColors.Window
         Me.Label4.Location = New System.Drawing.Point(369, 231)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 17)
+        Me.Label4.Size = New System.Drawing.Size(83, 18)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Nacimiento"
         '
@@ -345,7 +345,7 @@ Partial Class FormAdmin
         Me.Label3.ForeColor = System.Drawing.SystemColors.Window
         Me.Label3.Location = New System.Drawing.Point(50, 363)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 17)
+        Me.Label3.Size = New System.Drawing.Size(86, 18)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Documento"
         '
@@ -356,7 +356,7 @@ Partial Class FormAdmin
         Me.Label2.ForeColor = System.Drawing.SystemColors.Window
         Me.Label2.Location = New System.Drawing.Point(48, 299)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 17)
+        Me.Label2.Size = New System.Drawing.Size(59, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Apellido"
         '
@@ -367,7 +367,7 @@ Partial Class FormAdmin
         Me.Label1.ForeColor = System.Drawing.SystemColors.Window
         Me.Label1.Location = New System.Drawing.Point(48, 234)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 17)
+        Me.Label1.Size = New System.Drawing.Size(62, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre"
         '
@@ -518,7 +518,7 @@ Partial Class FormAdmin
         Me.Label6.ForeColor = System.Drawing.SystemColors.Window
         Me.Label6.Location = New System.Drawing.Point(693, 399)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(36, 17)
+        Me.Label6.Size = New System.Drawing.Size(39, 18)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Foto"
         '
@@ -538,7 +538,7 @@ Partial Class FormAdmin
         Me.DTPNacimientoCliente.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DTPNacimientoCliente.Location = New System.Drawing.Point(458, 228)
         Me.DTPNacimientoCliente.Name = "DTPNacimientoCliente"
-        Me.DTPNacimientoCliente.Size = New System.Drawing.Size(200, 23)
+        Me.DTPNacimientoCliente.Size = New System.Drawing.Size(200, 24)
         Me.DTPNacimientoCliente.TabIndex = 12
         '
         'TBDireccionCliente
@@ -546,7 +546,7 @@ Partial Class FormAdmin
         Me.TBDireccionCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDireccionCliente.Location = New System.Drawing.Point(458, 294)
         Me.TBDireccionCliente.Name = "TBDireccionCliente"
-        Me.TBDireccionCliente.Size = New System.Drawing.Size(200, 23)
+        Me.TBDireccionCliente.Size = New System.Drawing.Size(200, 24)
         Me.TBDireccionCliente.TabIndex = 10
         '
         'TBDocumentoCliente
@@ -554,7 +554,7 @@ Partial Class FormAdmin
         Me.TBDocumentoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDocumentoCliente.Location = New System.Drawing.Point(142, 360)
         Me.TBDocumentoCliente.Name = "TBDocumentoCliente"
-        Me.TBDocumentoCliente.Size = New System.Drawing.Size(195, 23)
+        Me.TBDocumentoCliente.Size = New System.Drawing.Size(195, 24)
         Me.TBDocumentoCliente.TabIndex = 9
         '
         'TBApellidoCliente
@@ -562,7 +562,7 @@ Partial Class FormAdmin
         Me.TBApellidoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBApellidoCliente.Location = New System.Drawing.Point(142, 296)
         Me.TBApellidoCliente.Name = "TBApellidoCliente"
-        Me.TBApellidoCliente.Size = New System.Drawing.Size(195, 23)
+        Me.TBApellidoCliente.Size = New System.Drawing.Size(195, 24)
         Me.TBApellidoCliente.TabIndex = 8
         '
         'TBNombreCliente
@@ -570,7 +570,7 @@ Partial Class FormAdmin
         Me.TBNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBNombreCliente.Location = New System.Drawing.Point(142, 231)
         Me.TBNombreCliente.Name = "TBNombreCliente"
-        Me.TBNombreCliente.Size = New System.Drawing.Size(195, 23)
+        Me.TBNombreCliente.Size = New System.Drawing.Size(195, 24)
         Me.TBNombreCliente.TabIndex = 7
         '
         'Label9
@@ -580,7 +580,7 @@ Partial Class FormAdmin
         Me.Label9.ForeColor = System.Drawing.SystemColors.Window
         Me.Label9.Location = New System.Drawing.Point(369, 296)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(67, 17)
+        Me.Label9.Size = New System.Drawing.Size(71, 18)
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "Dirección"
         '
@@ -591,7 +591,7 @@ Partial Class FormAdmin
         Me.Label10.ForeColor = System.Drawing.SystemColors.Window
         Me.Label10.Location = New System.Drawing.Point(369, 231)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(78, 17)
+        Me.Label10.Size = New System.Drawing.Size(83, 18)
         Me.Label10.TabIndex = 4
         Me.Label10.Text = "Nacimiento"
         '
@@ -602,7 +602,7 @@ Partial Class FormAdmin
         Me.Label11.ForeColor = System.Drawing.SystemColors.Window
         Me.Label11.Location = New System.Drawing.Point(50, 363)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(80, 17)
+        Me.Label11.Size = New System.Drawing.Size(86, 18)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Documento"
         '
@@ -613,7 +613,7 @@ Partial Class FormAdmin
         Me.Label12.ForeColor = System.Drawing.SystemColors.Window
         Me.Label12.Location = New System.Drawing.Point(48, 299)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(58, 17)
+        Me.Label12.Size = New System.Drawing.Size(59, 18)
         Me.Label12.TabIndex = 2
         Me.Label12.Text = "Apellido"
         '
@@ -624,7 +624,7 @@ Partial Class FormAdmin
         Me.Label13.ForeColor = System.Drawing.SystemColors.Window
         Me.Label13.Location = New System.Drawing.Point(48, 234)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(58, 17)
+        Me.Label13.Size = New System.Drawing.Size(62, 18)
         Me.Label13.TabIndex = 1
         Me.Label13.Text = "Nombre"
         '
@@ -709,7 +709,7 @@ Partial Class FormAdmin
         Me.CBDisponibleVehiculo.ForeColor = System.Drawing.SystemColors.Control
         Me.CBDisponibleVehiculo.Location = New System.Drawing.Point(446, 377)
         Me.CBDisponibleVehiculo.Name = "CBDisponibleVehiculo"
-        Me.CBDisponibleVehiculo.Size = New System.Drawing.Size(99, 21)
+        Me.CBDisponibleVehiculo.Size = New System.Drawing.Size(104, 22)
         Me.CBDisponibleVehiculo.TabIndex = 36
         Me.CBDisponibleVehiculo.Text = "¿En Stock?"
         Me.CBDisponibleVehiculo.UseVisualStyleBackColor = True
@@ -721,7 +721,7 @@ Partial Class FormAdmin
         Me.CBTransmisionesVehiculos.Items.AddRange(New Object() {"5", "6", "7", "8"})
         Me.CBTransmisionesVehiculos.Location = New System.Drawing.Point(446, 281)
         Me.CBTransmisionesVehiculos.Name = "CBTransmisionesVehiculos"
-        Me.CBTransmisionesVehiculos.Size = New System.Drawing.Size(195, 25)
+        Me.CBTransmisionesVehiculos.Size = New System.Drawing.Size(195, 26)
         Me.CBTransmisionesVehiculos.TabIndex = 35
         '
         'CBAsientosVehiculos
@@ -731,7 +731,7 @@ Partial Class FormAdmin
         Me.CBAsientosVehiculos.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
         Me.CBAsientosVehiculos.Location = New System.Drawing.Point(446, 231)
         Me.CBAsientosVehiculos.Name = "CBAsientosVehiculos"
-        Me.CBAsientosVehiculos.Size = New System.Drawing.Size(195, 25)
+        Me.CBAsientosVehiculos.Size = New System.Drawing.Size(195, 26)
         Me.CBAsientosVehiculos.TabIndex = 34
         '
         'CBMarcaVehiculo
@@ -741,7 +741,7 @@ Partial Class FormAdmin
         Me.CBMarcaVehiculo.Items.AddRange(New Object() {"Chevrolet", "Citroen", "Fiat", "Ford", "Peugeot", "Renault", "Toyota", "Volkwagen"})
         Me.CBMarcaVehiculo.Location = New System.Drawing.Point(125, 209)
         Me.CBMarcaVehiculo.Name = "CBMarcaVehiculo"
-        Me.CBMarcaVehiculo.Size = New System.Drawing.Size(195, 25)
+        Me.CBMarcaVehiculo.Size = New System.Drawing.Size(195, 26)
         Me.CBMarcaVehiculo.TabIndex = 33
         '
         'Label15
@@ -751,7 +751,7 @@ Partial Class FormAdmin
         Me.Label15.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label15.Location = New System.Drawing.Point(348, 378)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(74, 17)
+        Me.Label15.Size = New System.Drawing.Size(77, 18)
         Me.Label15.TabIndex = 31
         Me.Label15.Text = "Disponible"
         '
@@ -760,7 +760,7 @@ Partial Class FormAdmin
         Me.TBPesoVehiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBPesoVehiculo.Location = New System.Drawing.Point(446, 325)
         Me.TBPesoVehiculo.Name = "TBPesoVehiculo"
-        Me.TBPesoVehiculo.Size = New System.Drawing.Size(195, 23)
+        Me.TBPesoVehiculo.Size = New System.Drawing.Size(195, 24)
         Me.TBPesoVehiculo.TabIndex = 30
         '
         'Label16
@@ -770,7 +770,7 @@ Partial Class FormAdmin
         Me.Label16.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label16.Location = New System.Drawing.Point(348, 329)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(40, 17)
+        Me.Label16.Size = New System.Drawing.Size(43, 18)
         Me.Label16.TabIndex = 27
         Me.Label16.Text = "Peso"
         '
@@ -781,7 +781,7 @@ Partial Class FormAdmin
         Me.Label22.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label22.Location = New System.Drawing.Point(346, 282)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(85, 17)
+        Me.Label22.Size = New System.Drawing.Size(88, 18)
         Me.Label22.TabIndex = 26
         Me.Label22.Text = "Velocidades"
         '
@@ -792,7 +792,7 @@ Partial Class FormAdmin
         Me.Label23.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label23.Location = New System.Drawing.Point(346, 229)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(62, 17)
+        Me.Label23.Size = New System.Drawing.Size(65, 18)
         Me.Label23.TabIndex = 25
         Me.Label23.Text = "Asientos"
         '
@@ -801,7 +801,7 @@ Partial Class FormAdmin
         Me.TBPrecioVehiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBPrecioVehiculo.Location = New System.Drawing.Point(125, 402)
         Me.TBPrecioVehiculo.Name = "TBPrecioVehiculo"
-        Me.TBPrecioVehiculo.Size = New System.Drawing.Size(195, 23)
+        Me.TBPrecioVehiculo.Size = New System.Drawing.Size(195, 24)
         Me.TBPrecioVehiculo.TabIndex = 24
         '
         'Label21
@@ -811,7 +811,7 @@ Partial Class FormAdmin
         Me.Label21.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label21.Location = New System.Drawing.Point(39, 405)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(48, 17)
+        Me.Label21.Size = New System.Drawing.Size(51, 18)
         Me.Label21.TabIndex = 23
         Me.Label21.Text = "Precio"
         '
@@ -820,7 +820,7 @@ Partial Class FormAdmin
         Me.TBMotorVehiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBMotorVehiculo.Location = New System.Drawing.Point(125, 355)
         Me.TBMotorVehiculo.Name = "TBMotorVehiculo"
-        Me.TBMotorVehiculo.Size = New System.Drawing.Size(195, 23)
+        Me.TBMotorVehiculo.Size = New System.Drawing.Size(195, 24)
         Me.TBMotorVehiculo.TabIndex = 22
         '
         'Label20
@@ -830,7 +830,7 @@ Partial Class FormAdmin
         Me.Label20.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label20.Location = New System.Drawing.Point(39, 358)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(66, 17)
+        Me.Label20.Size = New System.Drawing.Size(70, 18)
         Me.Label20.TabIndex = 21
         Me.Label20.Text = "Motor (L)"
         '
@@ -919,7 +919,7 @@ Partial Class FormAdmin
         Me.Label14.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label14.Location = New System.Drawing.Point(693, 399)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(36, 17)
+        Me.Label14.Size = New System.Drawing.Size(39, 18)
         Me.Label14.TabIndex = 14
         Me.Label14.Text = "Foto"
         '
@@ -938,7 +938,7 @@ Partial Class FormAdmin
         Me.TBAñoVehiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBAñoVehiculo.Location = New System.Drawing.Point(125, 306)
         Me.TBAñoVehiculo.Name = "TBAñoVehiculo"
-        Me.TBAñoVehiculo.Size = New System.Drawing.Size(195, 23)
+        Me.TBAñoVehiculo.Size = New System.Drawing.Size(195, 24)
         Me.TBAñoVehiculo.TabIndex = 9
         '
         'TBModeloVehiculo
@@ -946,7 +946,7 @@ Partial Class FormAdmin
         Me.TBModeloVehiculo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBModeloVehiculo.Location = New System.Drawing.Point(125, 259)
         Me.TBModeloVehiculo.Name = "TBModeloVehiculo"
-        Me.TBModeloVehiculo.Size = New System.Drawing.Size(195, 23)
+        Me.TBModeloVehiculo.Size = New System.Drawing.Size(195, 24)
         Me.TBModeloVehiculo.TabIndex = 8
         '
         'Label17
@@ -956,7 +956,7 @@ Partial Class FormAdmin
         Me.Label17.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label17.Location = New System.Drawing.Point(39, 309)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(33, 17)
+        Me.Label17.Size = New System.Drawing.Size(34, 18)
         Me.Label17.TabIndex = 3
         Me.Label17.Text = "Año"
         '
@@ -967,7 +967,7 @@ Partial Class FormAdmin
         Me.Label18.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label18.Location = New System.Drawing.Point(37, 262)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(54, 17)
+        Me.Label18.Size = New System.Drawing.Size(58, 18)
         Me.Label18.TabIndex = 2
         Me.Label18.Text = "Modelo"
         '
@@ -978,13 +978,13 @@ Partial Class FormAdmin
         Me.Label19.ForeColor = System.Drawing.SystemColors.Menu
         Me.Label19.Location = New System.Drawing.Point(37, 209)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(47, 17)
+        Me.Label19.Size = New System.Drawing.Size(50, 18)
         Me.Label19.TabIndex = 1
         Me.Label19.Text = "Marca"
         '
         'DGVVehiculos
         '
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Control
         Me.DGVVehiculos.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle8
         Me.DGVVehiculos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.DGVVehiculos.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -1071,6 +1071,19 @@ Partial Class FormAdmin
         Me.Panel1.Size = New System.Drawing.Size(230, 563)
         Me.Panel1.TabIndex = 5
         '
+        'btnIrCatalogo
+        '
+        Me.btnIrCatalogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnIrCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIrCatalogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIrCatalogo.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnIrCatalogo.Location = New System.Drawing.Point(26, 399)
+        Me.btnIrCatalogo.Name = "btnIrCatalogo"
+        Me.btnIrCatalogo.Size = New System.Drawing.Size(185, 37)
+        Me.btnIrCatalogo.TabIndex = 7
+        Me.btnIrCatalogo.Text = "Ir a Catalogo"
+        Me.btnIrCatalogo.UseVisualStyleBackColor = False
+        '
         'BTGestionSolicitudes
         '
         Me.BTGestionSolicitudes.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
@@ -1134,7 +1147,7 @@ Partial Class FormAdmin
         Me.Label25.AutoSize = True
         Me.Label25.Location = New System.Drawing.Point(43, 197)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(140, 17)
+        Me.Label25.Size = New System.Drawing.Size(146, 18)
         Me.Label25.TabIndex = 24
         Me.Label25.Text = "Seleccionar Vehiculo"
         '
@@ -1143,7 +1156,7 @@ Partial Class FormAdmin
         Me.Label24.AutoSize = True
         Me.Label24.Location = New System.Drawing.Point(47, 33)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(129, 17)
+        Me.Label24.Size = New System.Drawing.Size(135, 18)
         Me.Label24.TabIndex = 23
         Me.Label24.Text = "Seleccionar Cliente"
         '
@@ -1153,7 +1166,7 @@ Partial Class FormAdmin
         Me.CBEstadoSolicitud.Items.AddRange(New Object() {"Pendiente", "Aprobada", "Denegada"})
         Me.CBEstadoSolicitud.Location = New System.Drawing.Point(112, 369)
         Me.CBEstadoSolicitud.Name = "CBEstadoSolicitud"
-        Me.CBEstadoSolicitud.Size = New System.Drawing.Size(214, 25)
+        Me.CBEstadoSolicitud.Size = New System.Drawing.Size(214, 26)
         Me.CBEstadoSolicitud.TabIndex = 22
         '
         'DGVVehiculoSolicitud
@@ -1263,7 +1276,7 @@ Partial Class FormAdmin
         Me.Label27.ForeColor = System.Drawing.SystemColors.Window
         Me.Label27.Location = New System.Drawing.Point(51, 372)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(52, 17)
+        Me.Label27.Size = New System.Drawing.Size(55, 18)
         Me.Label27.TabIndex = 3
         Me.Label27.Text = "Estado"
         '
@@ -1302,19 +1315,6 @@ Partial Class FormAdmin
         Me.DGVClienteSolicitud.Size = New System.Drawing.Size(789, 125)
         Me.DGVClienteSolicitud.TabIndex = 0
         '
-        'btnIrCatalogo
-        '
-        Me.btnIrCatalogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.btnIrCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIrCatalogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIrCatalogo.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnIrCatalogo.Location = New System.Drawing.Point(26, 399)
-        Me.btnIrCatalogo.Name = "btnIrCatalogo"
-        Me.btnIrCatalogo.Size = New System.Drawing.Size(185, 37)
-        Me.btnIrCatalogo.TabIndex = 7
-        Me.btnIrCatalogo.Text = "Ir a Catalogo"
-        Me.btnIrCatalogo.UseVisualStyleBackColor = False
-        '
         'FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1322,10 +1322,10 @@ Partial Class FormAdmin
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1184, 559)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.GBGestionSolicitudes)
         Me.Controls.Add(Me.GBVeehiculos)
         Me.Controls.Add(Me.GBEmpleados)
         Me.Controls.Add(Me.GBClientes)
+        Me.Controls.Add(Me.GBGestionSolicitudes)
         Me.Name = "FormAdmin"
         Me.Text = "Form1"
         Me.GBEmpleados.ResumeLayout(False)
