@@ -9,7 +9,7 @@ Public Class FormEmpleado
 
         LDocumento.Text = "Dni: " + FormLogin.TBDocumento.Text
         LNombreApellido.Text = "Bienvenido: " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(1) + " " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(2)
-        LFechaNacimiento.Text = "Fecha de Nacimiento: " + persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(4)
+        LIdeEmpleado.Text = persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(0)
         Dim var As Byte() = persona.LoginEmpleado(FormLogin.TBDocumento.Text, FormLogin.TBContreaseña.Text).Rows(0)(7)
         Dim ms As New MemoryStream(var)
         PBFoto.Image = Image.FromStream(ms)
@@ -41,4 +41,5 @@ Public Class FormEmpleado
         End If
         DGVSolicitudes.DataSource = persona.SeleccionarSolicitud
     End Sub
+
 End Class

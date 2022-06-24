@@ -22,12 +22,12 @@ Partial Class FormEmpleado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LNombreApellido = New System.Windows.Forms.Label()
         Me.LDocumento = New System.Windows.Forms.Label()
-        Me.LFechaNacimiento = New System.Windows.Forms.Label()
+        Me.LIdeEmpleado = New System.Windows.Forms.Label()
         Me.PBFoto = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.BSolicitudes = New System.Windows.Forms.Button()
@@ -68,16 +68,16 @@ Partial Class FormEmpleado
         Me.LDocumento.TabIndex = 2
         Me.LDocumento.Text = "Documento"
         '
-        'LFechaNacimiento
+        'LIdeEmpleado
         '
-        Me.LFechaNacimiento.AutoSize = True
-        Me.LFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LFechaNacimiento.ForeColor = System.Drawing.SystemColors.Control
-        Me.LFechaNacimiento.Location = New System.Drawing.Point(27, 189)
-        Me.LFechaNacimiento.Name = "LFechaNacimiento"
-        Me.LFechaNacimiento.Size = New System.Drawing.Size(68, 18)
-        Me.LFechaNacimiento.TabIndex = 3
-        Me.LFechaNacimiento.Text = "IdCliente:"
+        Me.LIdeEmpleado.AutoSize = True
+        Me.LIdeEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LIdeEmpleado.ForeColor = System.Drawing.SystemColors.Control
+        Me.LIdeEmpleado.Location = New System.Drawing.Point(27, 189)
+        Me.LIdeEmpleado.Name = "LIdeEmpleado"
+        Me.LIdeEmpleado.Size = New System.Drawing.Size(68, 18)
+        Me.LIdeEmpleado.TabIndex = 3
+        Me.LIdeEmpleado.Text = "IdCliente:"
         '
         'PBFoto
         '
@@ -98,7 +98,7 @@ Partial Class FormEmpleado
         Me.PanelMenu.Controls.Add(Me.btnCerrarSesion)
         Me.PanelMenu.Controls.Add(Me.PBFoto)
         Me.PanelMenu.Controls.Add(Me.btnIrCatalogo)
-        Me.PanelMenu.Controls.Add(Me.LFechaNacimiento)
+        Me.PanelMenu.Controls.Add(Me.LIdeEmpleado)
         Me.PanelMenu.Controls.Add(Me.LNombreApellido)
         Me.PanelMenu.Controls.Add(Me.LDocumento)
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
@@ -220,31 +220,31 @@ Partial Class FormEmpleado
         '
         Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVSolicitudes.EnableHeadersVisualStyles = False
         Me.DGVSolicitudes.Location = New System.Drawing.Point(255, 83)
         Me.DGVSolicitudes.Name = "DGVSolicitudes"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DGVSolicitudes.RowHeadersWidth = 45
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control
-        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control
+        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.DGVSolicitudes.Size = New System.Drawing.Size(966, 223)
         Me.DGVSolicitudes.TabIndex = 0
         '
@@ -269,7 +269,7 @@ Partial Class FormEmpleado
     End Sub
 
     Friend WithEvents LNombreApellido As Label
-    Friend WithEvents LFechaNacimiento As Label
+    Friend WithEvents LIdeEmpleado As Label
     Friend WithEvents PBFoto As PictureBox
     Friend WithEvents PanelMenu As Panel
     Public WithEvents LDocumento As Label
