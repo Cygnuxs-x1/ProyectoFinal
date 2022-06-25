@@ -26,15 +26,16 @@ Partial Class FormuCliente
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IIdCliente = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnCambiarContraseña = New System.Windows.Forms.Button()
         Me.BVerSolicitudes = New System.Windows.Forms.Button()
         Me.BVerCatologo = New System.Windows.Forms.Button()
         Me.PSolicitudes = New System.Windows.Forms.Panel()
+        Me.DGVSolicitudes = New System.Windows.Forms.DataGridView()
         Me.LTotalSolicitudes = New System.Windows.Forms.Label()
         Me.LSolicitudes = New System.Windows.Forms.Label()
-        Me.DGVSolicitudes = New System.Windows.Forms.DataGridView()
-        Me.IIdCliente = New System.Windows.Forms.Label()
+        Me.LBienvenida = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.PSolicitudes.SuspendLayout()
         CType(Me.DGVSolicitudes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,6 +54,18 @@ Partial Class FormuCliente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(200, 559)
         Me.Panel1.TabIndex = 0
+        '
+        'IIdCliente
+        '
+        Me.IIdCliente.AutoSize = True
+        Me.IIdCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.IIdCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IIdCliente.ForeColor = System.Drawing.SystemColors.Control
+        Me.IIdCliente.Location = New System.Drawing.Point(91, 66)
+        Me.IIdCliente.Name = "IIdCliente"
+        Me.IIdCliente.Size = New System.Drawing.Size(22, 18)
+        Me.IIdCliente.TabIndex = 3
+        Me.IIdCliente.Text = "ID"
         '
         'Button1
         '
@@ -107,34 +120,10 @@ Partial Class FormuCliente
         Me.PSolicitudes.Controls.Add(Me.DGVSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.LTotalSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.LSolicitudes)
-        Me.PSolicitudes.Location = New System.Drawing.Point(206, 0)
+        Me.PSolicitudes.Location = New System.Drawing.Point(200, 500)
         Me.PSolicitudes.Name = "PSolicitudes"
         Me.PSolicitudes.Size = New System.Drawing.Size(977, 559)
         Me.PSolicitudes.TabIndex = 1
-        '
-        'LTotalSolicitudes
-        '
-        Me.LTotalSolicitudes.AutoSize = True
-        Me.LTotalSolicitudes.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.LTotalSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LTotalSolicitudes.ForeColor = System.Drawing.SystemColors.Control
-        Me.LTotalSolicitudes.Location = New System.Drawing.Point(63, 117)
-        Me.LTotalSolicitudes.Name = "LTotalSolicitudes"
-        Me.LTotalSolicitudes.Size = New System.Drawing.Size(141, 18)
-        Me.LTotalSolicitudes.TabIndex = 1
-        Me.LTotalSolicitudes.Text = "Total de Solicitudes:"
-        '
-        'LSolicitudes
-        '
-        Me.LSolicitudes.AutoSize = True
-        Me.LSolicitudes.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.LSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LSolicitudes.ForeColor = System.Drawing.SystemColors.Control
-        Me.LSolicitudes.Location = New System.Drawing.Point(63, 66)
-        Me.LSolicitudes.Name = "LSolicitudes"
-        Me.LSolicitudes.Size = New System.Drawing.Size(183, 18)
-        Me.LSolicitudes.TabIndex = 0
-        Me.LSolicitudes.Text = "Estado de sus Solicitudes:"
         '
         'DGVSolicitudes
         '
@@ -170,17 +159,40 @@ Partial Class FormuCliente
         Me.DGVSolicitudes.Size = New System.Drawing.Size(863, 150)
         Me.DGVSolicitudes.TabIndex = 2
         '
-        'IIdCliente
+        'LTotalSolicitudes
         '
-        Me.IIdCliente.AutoSize = True
-        Me.IIdCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.IIdCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IIdCliente.ForeColor = System.Drawing.SystemColors.Control
-        Me.IIdCliente.Location = New System.Drawing.Point(91, 66)
-        Me.IIdCliente.Name = "IIdCliente"
-        Me.IIdCliente.Size = New System.Drawing.Size(22, 18)
-        Me.IIdCliente.TabIndex = 3
-        Me.IIdCliente.Text = "ID"
+        Me.LTotalSolicitudes.AutoSize = True
+        Me.LTotalSolicitudes.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.LTotalSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LTotalSolicitudes.ForeColor = System.Drawing.SystemColors.Control
+        Me.LTotalSolicitudes.Location = New System.Drawing.Point(63, 117)
+        Me.LTotalSolicitudes.Name = "LTotalSolicitudes"
+        Me.LTotalSolicitudes.Size = New System.Drawing.Size(141, 18)
+        Me.LTotalSolicitudes.TabIndex = 1
+        Me.LTotalSolicitudes.Text = "Total de Solicitudes:"
+        '
+        'LSolicitudes
+        '
+        Me.LSolicitudes.AutoSize = True
+        Me.LSolicitudes.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.LSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LSolicitudes.ForeColor = System.Drawing.SystemColors.Control
+        Me.LSolicitudes.Location = New System.Drawing.Point(63, 66)
+        Me.LSolicitudes.Name = "LSolicitudes"
+        Me.LSolicitudes.Size = New System.Drawing.Size(183, 18)
+        Me.LSolicitudes.TabIndex = 0
+        Me.LSolicitudes.Text = "Estado de sus Solicitudes:"
+        '
+        'LBienvenida
+        '
+        Me.LBienvenida.AutoSize = True
+        Me.LBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBienvenida.ForeColor = System.Drawing.SystemColors.Control
+        Me.LBienvenida.Location = New System.Drawing.Point(263, 71)
+        Me.LBienvenida.Name = "LBienvenida"
+        Me.LBienvenida.Size = New System.Drawing.Size(79, 18)
+        Me.LBienvenida.TabIndex = 2
+        Me.LBienvenida.Text = "Bienvenida"
         '
         'FormuCliente
         '
@@ -188,6 +200,7 @@ Partial Class FormuCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1184, 559)
+        Me.Controls.Add(Me.LBienvenida)
         Me.Controls.Add(Me.PSolicitudes)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
@@ -199,6 +212,7 @@ Partial Class FormuCliente
         Me.PSolicitudes.PerformLayout()
         CType(Me.DGVSolicitudes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -212,4 +226,5 @@ Partial Class FormuCliente
     Friend WithEvents LTotalSolicitudes As Label
     Friend WithEvents DGVSolicitudes As DataGridView
     Friend WithEvents IIdCliente As Label
+    Friend WithEvents LBienvenida As Label
 End Class

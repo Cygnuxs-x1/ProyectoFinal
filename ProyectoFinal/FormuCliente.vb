@@ -5,6 +5,7 @@ Public Class FormuCliente
     Private Sub FormuCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PSolicitudes.Hide()
         DGVSolicitudes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        LBienvenida.Text = "Bienvedido: " + cliente.BusquedaCliente(IIdCliente.Text).Rows(0)(1)
     End Sub
 
     Private Sub BVerCatologo_Click(sender As Object, e As EventArgs) Handles BVerCatologo.Click
