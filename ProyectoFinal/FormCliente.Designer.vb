@@ -22,9 +22,9 @@ Partial Class FormCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.PContraseña = New System.Windows.Forms.Panel()
         Me.btnGuardarCambios = New System.Windows.Forms.Button()
@@ -43,13 +43,6 @@ Partial Class FormCliente
         Me.DGVSolicitudes = New System.Windows.Forms.DataGridView()
         Me.LSolicitudes = New System.Windows.Forms.Label()
         Me.LBienvenida = New System.Windows.Forms.Label()
-        Me.btnCambiarContraseña = New System.Windows.Forms.Button()
-        Me.PContraseña = New System.Windows.Forms.Panel()
-        Me.btnGuardarCambios = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.PanelMenu.SuspendLayout()
         Me.PContraseña.SuspendLayout()
         Me.PSolicitudes.SuspendLayout()
@@ -59,7 +52,6 @@ Partial Class FormCliente
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.PContraseña)
         Me.PanelMenu.Controls.Add(Me.btnCambiarContraseña)
         Me.PanelMenu.Controls.Add(Me.BCerrarSesion)
         Me.PanelMenu.Controls.Add(Me.Label1)
@@ -79,9 +71,9 @@ Partial Class FormCliente
         Me.PContraseña.Controls.Add(Me.Label3)
         Me.PContraseña.Controls.Add(Me.TextBox1)
         Me.PContraseña.Controls.Add(Me.Label4)
-        Me.PContraseña.Location = New System.Drawing.Point(30, 280)
+        Me.PContraseña.Location = New System.Drawing.Point(0, 3)
         Me.PContraseña.Name = "PContraseña"
-        Me.PContraseña.Size = New System.Drawing.Size(310, 189)
+        Me.PContraseña.Size = New System.Drawing.Size(984, 556)
         Me.PContraseña.TabIndex = 7
         '
         'btnGuardarCambios
@@ -203,6 +195,7 @@ Partial Class FormCliente
         '
         'PSolicitudes
         '
+        Me.PSolicitudes.Controls.Add(Me.PContraseña)
         Me.PSolicitudes.Controls.Add(Me.LTotalSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.DGVSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.LSolicitudes)
@@ -227,32 +220,32 @@ Partial Class FormCliente
         '
         Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVSolicitudes.EnableHeadersVisualStyles = False
         Me.DGVSolicitudes.GridColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
         Me.DGVSolicitudes.Location = New System.Drawing.Point(66, 143)
         Me.DGVSolicitudes.Name = "DGVSolicitudes"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Menu
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGVSolicitudes.RowHeadersWidth = 45
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window
-        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
+        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.DGVSolicitudes.Size = New System.Drawing.Size(868, 168)
         Me.DGVSolicitudes.TabIndex = 1
         '
@@ -277,77 +270,6 @@ Partial Class FormCliente
         Me.LBienvenida.Size = New System.Drawing.Size(79, 18)
         Me.LBienvenida.TabIndex = 2
         Me.LBienvenida.Text = "Bienvenida"
-        '
-        'btnCambiarContraseña
-        '
-        Me.btnCambiarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCambiarContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCambiarContraseña.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnCambiarContraseña.Location = New System.Drawing.Point(30, 241)
-        Me.btnCambiarContraseña.Name = "btnCambiarContraseña"
-        Me.btnCambiarContraseña.Size = New System.Drawing.Size(148, 33)
-        Me.btnCambiarContraseña.TabIndex = 8
-        Me.btnCambiarContraseña.Text = "Cambiar Contraseña"
-        Me.btnCambiarContraseña.UseVisualStyleBackColor = True
-        '
-        'PContraseña
-        '
-        Me.PContraseña.Controls.Add(Me.btnGuardarCambios)
-        Me.PContraseña.Controls.Add(Me.TextBox2)
-        Me.PContraseña.Controls.Add(Me.Label3)
-        Me.PContraseña.Controls.Add(Me.TextBox1)
-        Me.PContraseña.Controls.Add(Me.Label4)
-        Me.PContraseña.Location = New System.Drawing.Point(30, 280)
-        Me.PContraseña.Name = "PContraseña"
-        Me.PContraseña.Size = New System.Drawing.Size(310, 189)
-        Me.PContraseña.TabIndex = 7
-        '
-        'btnGuardarCambios
-        '
-        Me.btnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGuardarCambios.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardarCambios.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnGuardarCambios.Location = New System.Drawing.Point(86, 93)
-        Me.btnGuardarCambios.Name = "btnGuardarCambios"
-        Me.btnGuardarCambios.Size = New System.Drawing.Size(144, 33)
-        Me.btnGuardarCambios.TabIndex = 8
-        Me.btnGuardarCambios.Text = "GuardarCambios"
-        Me.btnGuardarCambios.UseVisualStyleBackColor = False
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(130, 41)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 12
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label3.Location = New System.Drawing.Point(18, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 13)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Contraseña Actual"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(130, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 11
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(16, 46)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 13)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Contraseña Nueva"
         '
         'FormCliente
         '

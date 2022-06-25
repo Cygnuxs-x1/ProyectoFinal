@@ -11,6 +11,7 @@ Public Class FormCliente
         DGVSolicitudes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         PSolicitudes.Hide()
         LBienvenida.Text = "Bienvenido/a: " + cliente.BusquedaCliente(LIDCliente.Text).Rows(0)(1) + " " + cliente.BusquedaCliente(LIDCliente.Text).Rows(0)(2)
+        PContraseña.Hide()
     End Sub
 
     Private Sub BVerSolicitudes_Click(sender As Object, e As EventArgs) Handles BVerSolicitudes.Click
