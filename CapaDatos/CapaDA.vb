@@ -269,7 +269,7 @@ Public Class CapaDA
     End Sub
 
     Public Function SeleccionarSolicitud() As DataTable
-        Dim consulta As String = "Select * from VistaSolicitudesClientes"
+        Dim consulta As String = "Select * from VistaSolicitudesClientes where Estado = 'Pendiente'"
         Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
         Dim tabla As New DataTable
         adaptador.Fill(tabla)
@@ -303,4 +303,13 @@ Public Class CapaDA
         conexion.Close()
 
     End Sub
+
+    Public Function SeleccionarVentasxEmpleado(IdEmpleado As Integer) As DataTable
+        Dim consulta As String = "Select IdVenta, Marca, Modelo, FechaVenta, PrecioVenta from VistaVentas where IdEmpleado = '" & IdEmpleado & "'"
+        Dim adaptador As New SqlDataAdapter(consulta, RetornarCadena)
+        Dim tabla As New DataTable
+        adaptador.Fill(tabla)
+        Return tabla
+
+    End Function
 End Class

@@ -391,5 +391,5 @@ Partial Class FormCliente
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
->>>>>>> 2f050c1aabed6f36bfda8813b69feb840dd9c046
+    '>>>>>>> 2f050c1aabed6f36bfda8813b69feb840dd9c046
 End Class
