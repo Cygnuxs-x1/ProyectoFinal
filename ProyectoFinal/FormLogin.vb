@@ -13,8 +13,8 @@ Public Class FormLogin
             Else
 
                 If persona.LoginCliente(TBDocumento.Text, TBContreaseña.Text).Rows.Count <> 0 Then
-                    FormCliente.LIDCliente.Text = persona.LoginCliente(TBDocumento.Text, TBContreaseña.Text).Rows(0)(0)
-                    FormCliente.Show()
+                    FormuCliente.IIdCliente.Text = persona.LoginCliente(TBDocumento.Text, TBContreaseña.Text).Rows(0)(0)
+                    FormuCliente.Show()
                 Else
                     MessageBox.Show("Usuario o contraseña incorrecta")
                 End If
