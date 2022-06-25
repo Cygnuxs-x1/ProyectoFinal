@@ -110,4 +110,7 @@ Public Class CapaNE
         registro.AltaVenta(IdVehiculo, IdEmpleado, IdCliente, FechaVenta, PrecioVenta, CantidadCuotas, CuotasPagadas)
     End Sub
 
+    Public Function SeleccionarVentasxEmpleado(IdEmpleado As Integer) As DataTable
+        Return registro.SeleccionarVentasxEmpleado(IdEmpleado)
+    End Function
 End Class

@@ -22,9 +22,15 @@ Partial Class FormCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+<<<<<<< HEAD
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+=======
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+>>>>>>> 50bb77be80d38327e3059ed063b09a9a82b7bcd7
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.PContraseña = New System.Windows.Forms.Panel()
         Me.btnGuardarCambios = New System.Windows.Forms.Button()
@@ -52,7 +58,6 @@ Partial Class FormCliente
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.PContraseña)
         Me.PanelMenu.Controls.Add(Me.btnCambiarContraseña)
         Me.PanelMenu.Controls.Add(Me.BCerrarSesion)
         Me.PanelMenu.Controls.Add(Me.Label1)
@@ -72,9 +77,13 @@ Partial Class FormCliente
         Me.PContraseña.Controls.Add(Me.Label3)
         Me.PContraseña.Controls.Add(Me.TextBox1)
         Me.PContraseña.Controls.Add(Me.Label4)
+<<<<<<< HEAD
         Me.PContraseña.Location = New System.Drawing.Point(30, 192)
+=======
+        Me.PContraseña.Location = New System.Drawing.Point(0, 3)
+>>>>>>> 50bb77be80d38327e3059ed063b09a9a82b7bcd7
         Me.PContraseña.Name = "PContraseña"
-        Me.PContraseña.Size = New System.Drawing.Size(310, 189)
+        Me.PContraseña.Size = New System.Drawing.Size(984, 556)
         Me.PContraseña.TabIndex = 7
         '
         'btnGuardarCambios
@@ -196,6 +205,7 @@ Partial Class FormCliente
         '
         'PSolicitudes
         '
+        Me.PSolicitudes.Controls.Add(Me.PContraseña)
         Me.PSolicitudes.Controls.Add(Me.LTotalSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.DGVSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.LSolicitudes)
@@ -219,6 +229,7 @@ Partial Class FormCliente
         '
         Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
+<<<<<<< HEAD
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -227,11 +238,22 @@ Partial Class FormCliente
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+=======
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+>>>>>>> 50bb77be80d38327e3059ed063b09a9a82b7bcd7
         Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVSolicitudes.EnableHeadersVisualStyles = False
         Me.DGVSolicitudes.GridColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
         Me.DGVSolicitudes.Location = New System.Drawing.Point(66, 143)
         Me.DGVSolicitudes.Name = "DGVSolicitudes"
+<<<<<<< HEAD
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
         DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -245,6 +267,21 @@ Partial Class FormCliente
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Window
         Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle6
+=======
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGVSolicitudes.RowHeadersWidth = 45
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
+        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle3
+>>>>>>> 50bb77be80d38327e3059ed063b09a9a82b7bcd7
         Me.DGVSolicitudes.Size = New System.Drawing.Size(868, 168)
         Me.DGVSolicitudes.TabIndex = 1
         '
@@ -312,5 +349,5 @@ Partial Class FormCliente
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
->>>>>>> 2f050c1aabed6f36bfda8813b69feb840dd9c046
+    '>>>>>>> 2f050c1aabed6f36bfda8813b69feb840dd9c046
 End Class
