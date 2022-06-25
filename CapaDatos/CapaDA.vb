@@ -2,7 +2,7 @@
 Public Class CapaDA
     Public ReadOnly Property RetornarCadena() As String
         Get
-            Return "Server=DESKTOP-JM7Q6DD;Database=Concesionario;Trusted_Connection=True;"
+            Return "Server=(localdb)\MSSQLLocalDB;Database=Consecionario;Trusted_Connection=True;"
         End Get
     End Property
 
