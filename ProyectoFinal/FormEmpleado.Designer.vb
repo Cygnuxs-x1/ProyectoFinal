@@ -22,12 +22,20 @@ Partial Class FormEmpleado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+<<<<<<< HEAD
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+=======
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.LNombreApellido = New System.Windows.Forms.Label()
+        Me.LDocumento = New System.Windows.Forms.Label()
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.LIdeEmpleado = New System.Windows.Forms.Label()
         Me.PBFoto = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
@@ -41,17 +49,51 @@ Partial Class FormEmpleado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LSolicitudes = New System.Windows.Forms.Label()
         Me.DGVSolicitudes = New System.Windows.Forms.DataGridView()
+<<<<<<< HEAD
         Me.LDocumento = New System.Windows.Forms.Label()
         Me.LNombreApellido = New System.Windows.Forms.Label()
         Me.LVentasRealizadas = New System.Windows.Forms.Label()
         Me.DGVVentas = New System.Windows.Forms.DataGridView()
+=======
+        Me.PPerfil = New System.Windows.Forms.Panel()
+        Me.PaSolicitudes = New System.Windows.Forms.Panel()
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         CType(Me.PBFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
         Me.PSolicitudes.SuspendLayout()
         CType(Me.DGVSolicitudes, System.ComponentModel.ISupportInitialize).BeginInit()
+<<<<<<< HEAD
         CType(Me.DGVVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+=======
+        Me.PPerfil.SuspendLayout()
+        Me.PaSolicitudes.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'LNombreApellido
+        '
+        Me.LNombreApellido.AutoSize = True
+        Me.LNombreApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LNombreApellido.ForeColor = System.Drawing.SystemColors.Control
+        Me.LNombreApellido.Location = New System.Drawing.Point(277, 9)
+        Me.LNombreApellido.Name = "LNombreApellido"
+        Me.LNombreApellido.Size = New System.Drawing.Size(147, 18)
+        Me.LNombreApellido.TabIndex = 0
+        Me.LNombreApellido.Text = "Nombre + Apellido"
+        '
+        'LDocumento
+        '
+        Me.LDocumento.AutoSize = True
+        Me.LDocumento.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LDocumento.ForeColor = System.Drawing.SystemColors.Control
+        Me.LDocumento.Location = New System.Drawing.Point(265, 106)
+        Me.LDocumento.Name = "LDocumento"
+        Me.LDocumento.Size = New System.Drawing.Size(86, 18)
+        Me.LDocumento.TabIndex = 2
+        Me.LDocumento.Text = "Documento"
+        '
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         'LIdeEmpleado
         '
         Me.LIdeEmpleado.AutoSize = True
@@ -142,12 +184,18 @@ Partial Class FormEmpleado
         '
         'PSolicitudes
         '
+<<<<<<< HEAD
         Me.PSolicitudes.Controls.Add(Me.BAprobarVenta)
         Me.PSolicitudes.Controls.Add(Me.CBEstadoSolicitud)
         Me.PSolicitudes.Controls.Add(Me.Label1)
         Me.PSolicitudes.Controls.Add(Me.LSolicitudes)
         Me.PSolicitudes.Controls.Add(Me.DGVSolicitudes)
         Me.PSolicitudes.Location = New System.Drawing.Point(200, 0)
+=======
+        Me.PSolicitudes.Controls.Add(Me.PPerfil)
+        Me.PSolicitudes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PSolicitudes.Location = New System.Drawing.Point(0, 0)
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.PSolicitudes.Name = "PSolicitudes"
         Me.PSolicitudes.Size = New System.Drawing.Size(1264, 559)
         Me.PSolicitudes.TabIndex = 7
@@ -158,7 +206,11 @@ Partial Class FormEmpleado
         Me.BAprobarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BAprobarVenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BAprobarVenta.ForeColor = System.Drawing.SystemColors.Control
+<<<<<<< HEAD
         Me.BAprobarVenta.Location = New System.Drawing.Point(337, 423)
+=======
+        Me.BAprobarVenta.Location = New System.Drawing.Point(556, 454)
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.BAprobarVenta.Name = "BAprobarVenta"
         Me.BAprobarVenta.Size = New System.Drawing.Size(155, 37)
         Me.BAprobarVenta.TabIndex = 20
@@ -170,7 +222,11 @@ Partial Class FormEmpleado
         Me.CBEstadoSolicitud.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBEstadoSolicitud.FormattingEnabled = True
         Me.CBEstadoSolicitud.Items.AddRange(New Object() {"Aprobada", "Desaprobada"})
+<<<<<<< HEAD
         Me.CBEstadoSolicitud.Location = New System.Drawing.Point(287, 361)
+=======
+        Me.CBEstadoSolicitud.Location = New System.Drawing.Point(506, 392)
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.CBEstadoSolicitud.Name = "CBEstadoSolicitud"
         Me.CBEstadoSolicitud.Size = New System.Drawing.Size(215, 26)
         Me.CBEstadoSolicitud.TabIndex = 3
@@ -180,7 +236,11 @@ Partial Class FormEmpleado
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+<<<<<<< HEAD
         Me.Label1.Location = New System.Drawing.Point(58, 364)
+=======
+        Me.Label1.Location = New System.Drawing.Point(277, 395)
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(213, 18)
         Me.Label1.TabIndex = 2
@@ -191,7 +251,11 @@ Partial Class FormEmpleado
         Me.LSolicitudes.AutoSize = True
         Me.LSolicitudes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LSolicitudes.ForeColor = System.Drawing.SystemColors.Control
+<<<<<<< HEAD
         Me.LSolicitudes.Location = New System.Drawing.Point(58, 58)
+=======
+        Me.LSolicitudes.Location = New System.Drawing.Point(277, 75)
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.LSolicitudes.Name = "LSolicitudes"
         Me.LSolicitudes.Size = New System.Drawing.Size(80, 18)
         Me.LSolicitudes.TabIndex = 1
@@ -201,6 +265,7 @@ Partial Class FormEmpleado
         '
         Me.DGVSolicitudes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.DGVSolicitudes.BorderStyle = System.Windows.Forms.BorderStyle.None
+<<<<<<< HEAD
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
         DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -294,6 +359,59 @@ Partial Class FormEmpleado
         Me.DGVVentas.RowsDefaultCellStyle = DataGridViewCellStyle12
         Me.DGVVentas.Size = New System.Drawing.Size(935, 187)
         Me.DGVVentas.TabIndex = 9
+=======
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGVSolicitudes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVSolicitudes.EnableHeadersVisualStyles = False
+        Me.DGVSolicitudes.Location = New System.Drawing.Point(280, 127)
+        Me.DGVSolicitudes.Name = "DGVSolicitudes"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVSolicitudes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGVSolicitudes.RowHeadersWidth = 45
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control
+        Me.DGVSolicitudes.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DGVSolicitudes.Size = New System.Drawing.Size(966, 223)
+        Me.DGVSolicitudes.TabIndex = 0
+        '
+        'PPerfil
+        '
+        Me.PPerfil.Controls.Add(Me.PaSolicitudes)
+        Me.PPerfil.Controls.Add(Me.LDocumento)
+        Me.PPerfil.Controls.Add(Me.LNombreApellido)
+        Me.PPerfil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PPerfil.Location = New System.Drawing.Point(0, 0)
+        Me.PPerfil.Name = "PPerfil"
+        Me.PPerfil.Size = New System.Drawing.Size(1264, 559)
+        Me.PPerfil.TabIndex = 21
+        '
+        'PaSolicitudes
+        '
+        Me.PaSolicitudes.Controls.Add(Me.BAprobarVenta)
+        Me.PaSolicitudes.Controls.Add(Me.LSolicitudes)
+        Me.PaSolicitudes.Controls.Add(Me.CBEstadoSolicitud)
+        Me.PaSolicitudes.Controls.Add(Me.DGVSolicitudes)
+        Me.PaSolicitudes.Controls.Add(Me.Label1)
+        Me.PaSolicitudes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PaSolicitudes.Location = New System.Drawing.Point(0, 0)
+        Me.PaSolicitudes.Name = "PaSolicitudes"
+        Me.PaSolicitudes.Size = New System.Drawing.Size(1264, 559)
+        Me.PaSolicitudes.TabIndex = 3
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         '
         'FormEmpleado
         '
@@ -313,9 +431,15 @@ Partial Class FormEmpleado
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         Me.PSolicitudes.ResumeLayout(False)
-        Me.PSolicitudes.PerformLayout()
         CType(Me.DGVSolicitudes, System.ComponentModel.ISupportInitialize).EndInit()
+<<<<<<< HEAD
         CType(Me.DGVVentas, System.ComponentModel.ISupportInitialize).EndInit()
+=======
+        Me.PPerfil.ResumeLayout(False)
+        Me.PPerfil.PerformLayout()
+        Me.PaSolicitudes.ResumeLayout(False)
+        Me.PaSolicitudes.PerformLayout()
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -333,8 +457,13 @@ Partial Class FormEmpleado
     Friend WithEvents CBEstadoSolicitud As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents BAprobarVenta As Button
+<<<<<<< HEAD
     Friend WithEvents LNombreApellido As Label
     Public WithEvents LDocumento As Label
     Public WithEvents LVentasRealizadas As Label
     Friend WithEvents DGVVentas As DataGridView
+=======
+    Friend WithEvents PPerfil As Panel
+    Friend WithEvents PaSolicitudes As Panel
+>>>>>>> b484225b2d52cdd1b6e47498807e5b0ad6e0db63
 End Class
