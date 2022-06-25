@@ -7,6 +7,7 @@ Public Class FormCliente
     End Sub
 
     Private Sub FormCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PContraseña.Hide()
         DGVSolicitudes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         PSolicitudes.Hide()
         LBienvenida.Text = "Bienvenido/a: " + cliente.BusquedaCliente(LIDCliente.Text).Rows(0)(1) + " " + cliente.BusquedaCliente(LIDCliente.Text).Rows(0)(2)
@@ -20,5 +21,16 @@ Public Class FormCliente
 
     Private Sub BCerrarSesion_Click(sender As Object, e As EventArgs) Handles BCerrarSesion.Click
         Me.Hide()
+    End Sub
+
+    Private Sub PSolicitudes_Paint(sender As Object, e As PaintEventArgs) Handles PSolicitudes.Paint
+
+    End Sub
+
+    Private Sub btnCambiarContraseña_Click(sender As Object, e As EventArgs) Handles btnCambiarContraseña.Click
+        PSolicitudes.Hide()
+        PContraseña.Show()
+
+
     End Sub
 End Class

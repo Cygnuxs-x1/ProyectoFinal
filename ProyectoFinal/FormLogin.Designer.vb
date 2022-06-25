@@ -69,7 +69,7 @@ Partial Class FormLogin
         Me.TBContreaseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBContreaseña.Location = New System.Drawing.Point(20, 163)
         Me.TBContreaseña.Name = "TBContreaseña"
-        Me.TBContreaseña.Size = New System.Drawing.Size(284, 24)
+        Me.TBContreaseña.Size = New System.Drawing.Size(284, 23)
         Me.TBContreaseña.TabIndex = 8
         Me.TBContreaseña.UseSystemPasswordChar = True
         '
@@ -81,16 +81,16 @@ Partial Class FormLogin
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.Location = New System.Drawing.Point(17, 124)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 18)
+        Me.Label2.Size = New System.Drawing.Size(91, 17)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Contreaseña"
+        Me.Label2.Text = "Contraseña"
         '
         'TBDocumento
         '
         Me.TBDocumento.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDocumento.Location = New System.Drawing.Point(20, 85)
         Me.TBDocumento.Name = "TBDocumento"
-        Me.TBDocumento.Size = New System.Drawing.Size(284, 24)
+        Me.TBDocumento.Size = New System.Drawing.Size(284, 23)
         Me.TBDocumento.TabIndex = 7
         '
         'Panel1
@@ -114,7 +114,7 @@ Partial Class FormLogin
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Location = New System.Drawing.Point(17, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 18)
+        Me.Label1.Size = New System.Drawing.Size(89, 17)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Documento"
         '
@@ -185,7 +185,7 @@ Partial Class FormLogin
         Me.TBContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBContraseña.Location = New System.Drawing.Point(131, 261)
         Me.TBContraseña.Name = "TBContraseña"
-        Me.TBContraseña.Size = New System.Drawing.Size(163, 24)
+        Me.TBContraseña.Size = New System.Drawing.Size(163, 23)
         Me.TBContraseña.TabIndex = 12
         Me.TBContraseña.UseSystemPasswordChar = True
         '
@@ -194,7 +194,7 @@ Partial Class FormLogin
         Me.TBDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDireccion.Location = New System.Drawing.Point(131, 220)
         Me.TBDireccion.Name = "TBDireccion"
-        Me.TBDireccion.Size = New System.Drawing.Size(163, 24)
+        Me.TBDireccion.Size = New System.Drawing.Size(163, 23)
         Me.TBDireccion.TabIndex = 11
         '
         'DTPNacimiento
@@ -214,7 +214,7 @@ Partial Class FormLogin
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
         Me.Label8.Location = New System.Drawing.Point(19, 264)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(85, 18)
+        Me.Label8.Size = New System.Drawing.Size(81, 17)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Contraseña"
         '
@@ -223,7 +223,7 @@ Partial Class FormLogin
         Me.TBDocumentoN.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBDocumentoN.Location = New System.Drawing.Point(131, 128)
         Me.TBDocumentoN.Name = "TBDocumentoN"
-        Me.TBDocumentoN.Size = New System.Drawing.Size(163, 24)
+        Me.TBDocumentoN.Size = New System.Drawing.Size(163, 23)
         Me.TBDocumentoN.TabIndex = 8
         '
         'TBApellido
@@ -231,7 +231,7 @@ Partial Class FormLogin
         Me.TBApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBApellido.Location = New System.Drawing.Point(131, 79)
         Me.TBApellido.Name = "TBApellido"
-        Me.TBApellido.Size = New System.Drawing.Size(163, 24)
+        Me.TBApellido.Size = New System.Drawing.Size(163, 23)
         Me.TBApellido.TabIndex = 7
         '
         'TBNombre
@@ -239,7 +239,7 @@ Partial Class FormLogin
         Me.TBNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBNombre.Location = New System.Drawing.Point(131, 36)
         Me.TBNombre.Name = "TBNombre"
-        Me.TBNombre.Size = New System.Drawing.Size(163, 24)
+        Me.TBNombre.Size = New System.Drawing.Size(163, 23)
         Me.TBNombre.TabIndex = 6
         '
         'PBFoto
@@ -258,7 +258,7 @@ Partial Class FormLogin
         Me.Label7.ForeColor = System.Drawing.SystemColors.Control
         Me.Label7.Location = New System.Drawing.Point(19, 220)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(71, 18)
+        Me.Label7.Size = New System.Drawing.Size(67, 17)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Direccion"
         '
@@ -269,7 +269,7 @@ Partial Class FormLogin
         Me.Label6.ForeColor = System.Drawing.SystemColors.Control
         Me.Label6.Location = New System.Drawing.Point(19, 173)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 18)
+        Me.Label6.Size = New System.Drawing.Size(78, 17)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "Nacimiento"
         '
@@ -280,7 +280,7 @@ Partial Class FormLogin
         Me.Label5.ForeColor = System.Drawing.SystemColors.Control
         Me.Label5.Location = New System.Drawing.Point(19, 128)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(86, 18)
+        Me.Label5.Size = New System.Drawing.Size(80, 17)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Documento"
         '
@@ -291,7 +291,7 @@ Partial Class FormLogin
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
         Me.Label4.Location = New System.Drawing.Point(19, 79)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 18)
+        Me.Label4.Size = New System.Drawing.Size(58, 17)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Apellido"
         '
@@ -302,7 +302,7 @@ Partial Class FormLogin
         Me.Label3.ForeColor = System.Drawing.SystemColors.Control
         Me.Label3.Location = New System.Drawing.Point(19, 35)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 18)
+        Me.Label3.Size = New System.Drawing.Size(58, 17)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Nombre"
         '
