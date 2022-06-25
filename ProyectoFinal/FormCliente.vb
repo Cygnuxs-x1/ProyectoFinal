@@ -30,7 +30,6 @@ Public Class FormCliente
     Private Sub btnCambiarContraseña_Click(sender As Object, e As EventArgs) Handles btnCambiarContraseña.Click
         PSolicitudes.Hide()
         PContraseña.Show()
-
-
     End Sub
+
 End Class

@@ -106,5 +106,8 @@ Public Class CapaNE
         Return registro.SeleccionarSolicitudesxCliente(Idcliente)
     End Function
 
+    Public Sub AltaVenta(IdVehiculo As Integer, IdEmpleado As Integer, IdCliente As Integer, FechaVenta As Date, PrecioVenta As Double, CantidadCuotas As Integer, CuotasPagadas As Integer)
+        registro.AltaVenta(IdVehiculo, IdEmpleado, IdCliente, FechaVenta, PrecioVenta, CantidadCuotas, CuotasPagadas)
+    End Sub
 
 End Class

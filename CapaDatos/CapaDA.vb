@@ -2,7 +2,8 @@
 Public Class CapaDA
     Public ReadOnly Property RetornarCadena() As String
         Get
-            Return "Server=(localdb)\MSSQLLocalDB;Database=Consecionario;Trusted_Connection=True;"
+            Return "Server=DESKTOP-JM7Q6DD;Database=Concesionario;Trusted_Connection=True;"
+            'Return "Server=(localdb)\MSSQLLocalDB;Database=Conecionario;Trusted_Connection=True;"
         End Get
     End Property
 
@@ -283,4 +284,23 @@ Public Class CapaDA
         Return tabla
     End Function
 
+    'GESTIÓN VENTAS-----------------------------------------------------------------------------------
+    Public Sub AltaVenta(IdVehiculo As Integer, IdEmpleado As Integer, IdCliente As Integer, FechaVenta As Date, PrecioVenta As Double, CantidadCuotas As Integer, CuotasPagadas As Integer)
+        Dim conexion As New SqlConnection(RetornarCadena)
+        Dim comando As New SqlCommand
+        comando.Connection = conexion
+        comando.CommandText = "Insert into Ventas values(@IdVehiculo, @IdEmpleado, @IdCliente, @FechaVenta, @PrecioVenta, @CantidadCuotas, @CuotasPagadas)"
+        comando.Parameters.Add("@IdVehiculo", SqlDbType.Int).Value = IdVehiculo
+        comando.Parameters.Add("@IdEmpleado", SqlDbType.Int).Value = IdEmpleado
+        comando.Parameters.Add("@IdCliente", SqlDbType.Int).Value = IdCliente
+        comando.Parameters.Add("@FechaVenta", SqlDbType.Date).Value = FechaVenta
+        comando.Parameters.Add("@PrecioVenta", SqlDbType.Decimal).Value = PrecioVenta
+        comando.Parameters.Add("@CantidadCuotas", SqlDbType.Int).Value = CantidadCuotas
+        comando.Parameters.Add("@CuotasPagadas", SqlDbType.Int).Value = CuotasPagadas
+
+        conexion.Open()
+        comando.ExecuteNonQuery()
+        conexion.Close()
+
+    End Sub
 End Class

@@ -26,7 +26,6 @@ Partial Class FormVenta
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtDni = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -34,8 +33,8 @@ Partial Class FormVenta
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CBFormadePago = New System.Windows.Forms.ComboBox()
+        Me.CBCuotas = New System.Windows.Forms.ComboBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
@@ -51,19 +50,20 @@ Partial Class FormVenta
         Me.PbFotoVehiculo = New System.Windows.Forms.PictureBox()
         Me.txtIdVehiculo = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnSolicitarCompra = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.LidEmpleado = New System.Windows.Forms.Label()
-        Me.LIdVehiculo = New System.Windows.Forms.Label()
         Me.LIdCliente = New System.Windows.Forms.Label()
+        Me.LIdVehiculo = New System.Windows.Forms.Label()
+        Me.LidEmpleado = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.DTPFechaVenta = New System.Windows.Forms.DateTimePicker()
         CType(Me.PbFotoVehiculo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -83,7 +83,7 @@ Partial Class FormVenta
         Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label20.Location = New System.Drawing.Point(745, 370)
+        Me.Label20.Location = New System.Drawing.Point(733, 356)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(56, 18)
         Me.Label20.TabIndex = 59
@@ -95,7 +95,7 @@ Partial Class FormVenta
         Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label19.Location = New System.Drawing.Point(733, 303)
+        Me.Label19.Location = New System.Drawing.Point(733, 289)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(113, 18)
         Me.Label19.TabIndex = 58
@@ -112,14 +112,6 @@ Partial Class FormVenta
         Me.Label16.Size = New System.Drawing.Size(68, 18)
         Me.Label16.TabIndex = 56
         Me.Label16.Text = "IdCliente:"
-        '
-        'txtEstado
-        '
-        Me.txtEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEstado.Location = New System.Drawing.Point(375, 505)
-        Me.txtEstado.Name = "txtEstado"
-        Me.txtEstado.Size = New System.Drawing.Size(276, 24)
-        Me.txtEstado.TabIndex = 55
         '
         'txtNombre
         '
@@ -197,25 +189,25 @@ Partial Class FormVenta
         Me.Label2.TabIndex = 39
         Me.Label2.Text = "Datos del cliente:"
         '
-        'ComboBox2
+        'CBFormadePago
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Tarjeta de Credito", "Tarjeta de Debito", "Efectivo", "Financiacion"})
-        Me.ComboBox2.Location = New System.Drawing.Point(736, 333)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(231, 26)
-        Me.ComboBox2.TabIndex = 38
+        Me.CBFormadePago.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBFormadePago.FormattingEnabled = True
+        Me.CBFormadePago.Items.AddRange(New Object() {"Tarjeta de Credito", "Efectivo", "Financiacion"})
+        Me.CBFormadePago.Location = New System.Drawing.Point(736, 319)
+        Me.CBFormadePago.Name = "CBFormadePago"
+        Me.CBFormadePago.Size = New System.Drawing.Size(279, 26)
+        Me.CBFormadePago.TabIndex = 38
         '
-        'ComboBox1
+        'CBCuotas
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1 Cuota", "2 Cuotas", "3 cuotas", "4 cuotas", "5 Cuotas", "20 Cuotas", "100 Cuotas"})
-        Me.ComboBox1.Location = New System.Drawing.Point(736, 391)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(228, 26)
-        Me.ComboBox1.TabIndex = 37
+        Me.CBCuotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBCuotas.FormattingEnabled = True
+        Me.CBCuotas.Items.AddRange(New Object() {"1", "20", "40", "80", "100"})
+        Me.CBCuotas.Location = New System.Drawing.Point(736, 377)
+        Me.CBCuotas.Name = "CBCuotas"
+        Me.CBCuotas.Size = New System.Drawing.Size(276, 26)
+        Me.CBCuotas.TabIndex = 37
         '
         'txtApellido
         '
@@ -372,18 +364,6 @@ Partial Class FormVenta
         Me.Label27.TabIndex = 71
         Me.Label27.Text = "IdVehiculo"
         '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label28.Location = New System.Drawing.Point(220, 507)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(55, 18)
-        Me.Label28.TabIndex = 73
-        Me.Label28.Text = "Estado"
-        '
         'btnVolver
         '
         Me.btnVolver.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(90, Byte), Integer))
@@ -398,11 +378,11 @@ Partial Class FormVenta
         '
         'btnSolicitarCompra
         '
-        Me.btnSolicitarCompra.BackColor = System.Drawing.Color.Red
+        Me.btnSolicitarCompra.BackColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.btnSolicitarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSolicitarCompra.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSolicitarCompra.ForeColor = System.Drawing.Color.Snow
-        Me.btnSolicitarCompra.Location = New System.Drawing.Point(792, 443)
+        Me.btnSolicitarCompra.Location = New System.Drawing.Point(792, 481)
         Me.btnSolicitarCompra.Name = "btnSolicitarCompra"
         Me.btnSolicitarCompra.Size = New System.Drawing.Size(172, 38)
         Me.btnSolicitarCompra.TabIndex = 34
@@ -452,61 +432,16 @@ Partial Class FormVenta
         Me.Panel2.Size = New System.Drawing.Size(200, 559)
         Me.Panel2.TabIndex = 77
         '
-        'Label3
+        'LIdCliente
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(733, 260)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(125, 18)
-        Me.Label3.TabIndex = 78
-        Me.Label3.Text = "Datos de Pago:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label4.Location = New System.Drawing.Point(25, 52)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 18)
-        Me.Label4.TabIndex = 76
-        Me.Label4.Text = "IdCliente:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(25, 88)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(79, 18)
-        Me.Label9.TabIndex = 77
-        Me.Label9.Text = "IdVehiculo:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label10.Location = New System.Drawing.Point(25, 127)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(90, 18)
-        Me.Label10.TabIndex = 78
-        Me.Label10.Text = "IdEmpleado:"
-        '
-        'LidEmpleado
-        '
-        Me.LidEmpleado.AutoSize = True
-        Me.LidEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LidEmpleado.ForeColor = System.Drawing.SystemColors.Control
-        Me.LidEmpleado.Location = New System.Drawing.Point(135, 127)
-        Me.LidEmpleado.Name = "LidEmpleado"
-        Me.LidEmpleado.Size = New System.Drawing.Size(22, 18)
-        Me.LidEmpleado.TabIndex = 79
-        Me.LidEmpleado.Text = "ID"
+        Me.LIdCliente.AutoSize = True
+        Me.LIdCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LIdCliente.ForeColor = System.Drawing.SystemColors.Control
+        Me.LIdCliente.Location = New System.Drawing.Point(135, 52)
+        Me.LIdCliente.Name = "LIdCliente"
+        Me.LIdCliente.Size = New System.Drawing.Size(22, 18)
+        Me.LIdCliente.TabIndex = 81
+        Me.LIdCliente.Text = "ID"
         '
         'LIdVehiculo
         '
@@ -519,16 +454,82 @@ Partial Class FormVenta
         Me.LIdVehiculo.TabIndex = 80
         Me.LIdVehiculo.Text = "ID"
         '
-        'LIdCliente
+        'LidEmpleado
         '
-        Me.LIdCliente.AutoSize = True
-        Me.LIdCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LIdCliente.ForeColor = System.Drawing.SystemColors.Control
-        Me.LIdCliente.Location = New System.Drawing.Point(135, 52)
-        Me.LIdCliente.Name = "LIdCliente"
-        Me.LIdCliente.Size = New System.Drawing.Size(22, 18)
-        Me.LIdCliente.TabIndex = 81
-        Me.LIdCliente.Text = "ID"
+        Me.LidEmpleado.AutoSize = True
+        Me.LidEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LidEmpleado.ForeColor = System.Drawing.SystemColors.Control
+        Me.LidEmpleado.Location = New System.Drawing.Point(135, 127)
+        Me.LidEmpleado.Name = "LidEmpleado"
+        Me.LidEmpleado.Size = New System.Drawing.Size(22, 18)
+        Me.LidEmpleado.TabIndex = 79
+        Me.LidEmpleado.Text = "ID"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label10.Location = New System.Drawing.Point(25, 127)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(90, 18)
+        Me.Label10.TabIndex = 78
+        Me.Label10.Text = "IdEmpleado:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label9.Location = New System.Drawing.Point(25, 88)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(79, 18)
+        Me.Label9.TabIndex = 77
+        Me.Label9.Text = "IdVehiculo:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label4.Location = New System.Drawing.Point(25, 52)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(68, 18)
+        Me.Label4.TabIndex = 76
+        Me.Label4.Text = "IdCliente:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(733, 260)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(125, 18)
+        Me.Label3.TabIndex = 78
+        Me.Label3.Text = "Datos de Pago:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(733, 416)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(110, 18)
+        Me.Label11.TabIndex = 79
+        Me.Label11.Text = "Fecha de Venta"
+        '
+        'DTPFechaVenta
+        '
+        Me.DTPFechaVenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.18868!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DTPFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DTPFechaVenta.Location = New System.Drawing.Point(736, 443)
+        Me.DTPFechaVenta.Name = "DTPFechaVenta"
+        Me.DTPFechaVenta.Size = New System.Drawing.Size(276, 24)
+        Me.DTPFechaVenta.TabIndex = 80
         '
         'FormVenta
         '
@@ -536,10 +537,11 @@ Partial Class FormVenta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1184, 559)
+        Me.Controls.Add(Me.DTPFechaVenta)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSolicitarCompra)
-        Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.txtIdVehiculo)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.txtDireccion)
@@ -549,7 +551,6 @@ Partial Class FormVenta
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.txtEstado)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtDni)
         Me.Controls.Add(Me.Label8)
@@ -557,8 +558,8 @@ Partial Class FormVenta
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CBFormadePago)
+        Me.Controls.Add(Me.CBCuotas)
         Me.Controls.Add(Me.txtApellido)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -577,7 +578,6 @@ Partial Class FormVenta
     Friend WithEvents Label20 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents txtEstado As TextBox
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtDni As TextBox
     Friend WithEvents Label8 As Label
@@ -585,8 +585,8 @@ Partial Class FormVenta
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CBFormadePago As ComboBox
+    Friend WithEvents CBCuotas As ComboBox
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents dtpFecha As DateTimePicker
     Friend WithEvents txtDireccion As TextBox
@@ -602,7 +602,6 @@ Partial Class FormVenta
     Friend WithEvents PbFotoVehiculo As PictureBox
     Friend WithEvents txtIdVehiculo As TextBox
     Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
     Friend WithEvents btnVolver As Button
     Friend WithEvents btnSolicitarCompra As Button
     Friend WithEvents Panel1 As Panel
@@ -615,4 +614,6 @@ Partial Class FormVenta
     Friend WithEvents LIdCliente As Label
     Friend WithEvents LIdVehiculo As Label
     Friend WithEvents LidEmpleado As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents DTPFechaVenta As DateTimePicker
 End Class
